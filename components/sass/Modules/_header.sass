@@ -1,3 +1,27 @@
+.socials
+  @extend .col-1
+  +element('socials-icon')
+  a
+    text-decoration: none
+    color: $charcoal
+    &:visited
+      color: $charcoal
+    &:hover, &:focus
+      color: $orange
+      outline: none
+
+
+.search-input
+  @extend .col-2
+  text-align: right
+  display: flex
+  justify-content: flex-end
+  +element('text-field')
+
+  label
+    opacity: 0
+
+
 .logo
   @extend .col-1
 
