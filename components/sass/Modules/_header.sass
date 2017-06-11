@@ -1,29 +1,52 @@
 .socials
-  @extend .col-1
-  +element('socials-icon')
-  a
-    text-decoration: none
-    color: $charcoal
-    &:visited
-      color: $charcoal
-    &:hover, &:focus
-      color: $orange
-      outline: none
+    @extend .col-1
+    +element('socials-icon')
+    a
+        text-decoration: none
+        color: $charcoal
+        &:visited
+            color: $charcoal
+        &:hover, &:focus
+            color: $orange
+            outline: none
 
 
 .search-input
-  @extend .col-2
-  text-align: right
-  display: flex
-  justify-content: flex-end
-  +element('text-field')
+    @extend .col-2
+    text-align: right
+    display: flex
+    justify-content: flex-end
+    +element('text-field')
+        width: 215px
+        height: 35px
+        border-radius: 10px
+        border: none
+        background-color: $grey
+        color: white
+        padding: 10px
+        box-sizing: border-box
+        font-size: 0.8em
+        margin-right: 5px
+        &::placeholder
+            color: white
 
-  label
-    opacity: 0
+        &:focus
+            outline: none
 
+    +element('submit')
+        height: 35px
+        width: 70px
+        border: none
+        background-color: $lightblue
+        color: white
+        text-transfrom: uppercase
+        padding: 10px
+        font-size: 0.8em
+        border-radius: 10px
+        box-sizing: border-box
 
 .logo
-  @extend .col-1
+@extend .col-1
 
 .navbar
-  @extend .col-2
+@extend .col-2
