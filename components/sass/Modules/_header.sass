@@ -2,7 +2,6 @@
     @extend .col-1
     +element('socials-icon')
     a
-        text-decoration: none
         color: $charcoal
         &:visited
             color: $charcoal
@@ -32,7 +31,46 @@
         cursor: pointer
 
 .logo
-@extend .col-1
+    @extend .col-1
+    +element('main-text')
+        display: block
+        font-size: 1.6em
+        text-transform: uppercase
+        color: $lightgrey
+        
+        big
+            font-size: 2em
+    
+    +element('secondary-text') 
+        color: $lightgrey
+        display: block
+        font-size: 0.8em
+        letter-spacing: 0.4px
 
+nav
+    display: flex
+    align-items: flex-end
+    
 .navbar
-@extend .col-2
+    @extend .col-2
+    list-style-type: none
+    padding: 0
+    margin: 0
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    
+    +element('menu-item')
+        padding: 0 10px
+        text-transform: uppercase
+        font-size: 0.8em
+        
+        a
+            color: $lightgrey
+            &:visited
+                color: $lightgrey
+        
+            &:hover,
+            &:active,
+            &:focus
+                color: $lightblue
