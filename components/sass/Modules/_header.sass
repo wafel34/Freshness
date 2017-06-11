@@ -17,33 +17,19 @@
     display: flex
     justify-content: flex-end
     +element('text-field')
+        @extend .button
         width: 215px
-        height: 35px
-        border-radius: 10px
-        border: none
         background-color: $grey
-        color: white
-        padding: 10px
-        box-sizing: border-box
-        font-size: 0.8em
         margin-right: 5px
         &::placeholder
             color: white
 
-        &:focus
-            outline: none
-
     +element('submit')
-        height: 35px
+        @extend .button
         width: 70px
-        border: none
         background-color: $lightblue
-        color: white
         text-transfrom: uppercase
-        padding: 10px
-        font-size: 0.8em
-        border-radius: 10px
-        box-sizing: border-box
+        cursor: pointer
 
 .logo
 @extend .col-1
