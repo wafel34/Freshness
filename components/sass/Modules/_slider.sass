@@ -1,0 +1,23 @@
+.slider-screen
+  @extend .col-2
+
+
+.slider-text
+  @extend .col-2
+  +element('button')
+    background-color: $lightblue
+    text-transform: uppercase
+
+.indicators
+  display: flex
+  justify-content: flex-end
+  +element('item')
+    height: 15px
+    width: 15px
+    margin-left: 5px
+    padding: 0
+    background-color: $lightblue
+    border: 2px solid $lightblue
+    border-radius: 100%
+    +modifier('active')
+      background-color: white

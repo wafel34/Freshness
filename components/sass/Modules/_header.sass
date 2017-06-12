@@ -11,7 +11,7 @@
 
 
 .search-input
-    @extend .col-2
+    @extend .col-2-3
     text-align: right
     display: flex
     justify-content: flex-end
@@ -37,12 +37,12 @@
         font-size: 1.6em
         text-transform: uppercase
         color: $lightgrey
-        
+
         big
             font-size: 2em
-    
-    +element('secondary-text') 
-        color: $lightgrey
+
+    +element('secondary-text')
+        color: $ultralightgrey
         display: block
         font-size: 0.8em
         letter-spacing: 0.4px
@@ -50,26 +50,26 @@
 nav
     display: flex
     align-items: flex-end
-    
+
 .navbar
-    @extend .col-2
+    @extend .col-2-3
     list-style-type: none
     padding: 0
     margin: 0
     display: flex
     justify-content: flex-end
     align-items: flex-end
-    
+
     +element('menu-item')
         padding: 0 10px
         text-transform: uppercase
         font-size: 0.8em
-        
+
         a
-            color: $lightgrey
+            color: $ultralightgrey
             &:visited
-                color: $lightgrey
-        
+                color: $ultralightgrey
+
             &:hover,
             &:active,
             &:focus
