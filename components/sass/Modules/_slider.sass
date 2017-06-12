@@ -1,25 +1,50 @@
 .slider-screen
     @extend .col-2
+    padding-top: 25px
+    padding-bottom: 25px
+    position: relative
+    
+    +element('screen')
+
+    
+    +element('image')
+        position: absolute
+        top: 41px
+        left: 31px
 
 
 .slider-text
     @extend .col-2
+    padding-top: 25px
+    padding-bottom: 25px
+    position: relative
     +element('button')
         background-color: $lightblue
         text-transform: uppercase
         font-size: 1em
         font-weight: 100
+        letter-spacing: 1px
+        display: flex
+    
+        small
+            align-self: center
+            padding-left: 5px
     h1
         text-transform: uppercase
         font-weight: 400
         font-size: 2.6em
-        margin-top: 95px
+        margin-top: 70px
+        color: $lightgrey
         
     p
         font-size: 1em
         margin: 40px 0
+        color: $ultralightgrey
 
 .indicators
+    position: absolute
+    bottom: 25px
+    right: 15px
     display: flex
     justify-content: flex-end
     +element('item')
@@ -33,5 +58,6 @@
         cursor: pointer
         &:focus
             outline: none
+            border: 2px solid $orange
         +modifier('active')
             background-color: white
