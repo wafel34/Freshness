@@ -60,13 +60,13 @@
 			<h1>Your title here</h1>
 			<p>Duis scelerisque efficitur neque non varius. Integer vulputate purus id porttitor dictum. Sed ac turpis semper,
 				 pulvinar leo ut, mollis orci. Nulla in ullamcorper risus.</p>
-			<button class="slider-text__button button">Read More <small>&gt;&gt;</small></button>
+			<button type="button" class="slider-text__button button">Read More <small>&gt;&gt;</small></button>
 			<div class="indicators">
-				<button class="indicators__item"></button>
-				<button class="indicators__item"></button>
-				<button class="indicators__item"></button>
-				<button class="indicators__item"></button>
-				<button class="indicators__item indicators__item--active"></button>
+				<button type="button" class="indicators__item"></button>
+				<button type="button" class="indicators__item"></button>
+				<button type="button" class="indicators__item"></button>
+				<button type="button" class="indicators__item"></button>
+				<button type="button" class="indicators__item indicators__item--active"></button>
 			</div><!--indicators-->
 		</div><!--slider-text-->
 	</div><!--row-container-->
@@ -81,19 +81,19 @@
             <img src="./images/image_placeholder.png" alt="Placeholder image" class="tile__image">
             <h2 class="tile__header">Your title here</h2>
             <p class="tile__paragraph">Duis scelerisque efficitur neque non varius. Integer vulputate purus id porttitor dictum. Sed ac turpis semper,pulvinar leo ut, mollis orci. Nulla in ullamcorper risus.</p>
-            <button class="tile__button">Read more<small>&gt;&gt;</small></button>
+            <button type="button" class="tile__button">Read more<small>&gt;&gt;</small></button>
         </div><!--tile-->
         <div class="tile">
             <img src="./images/image_placeholder.png" alt="Placeholder image" class="tile__image">
             <h2 class="tile__header">Your title here</h2>
             <p class="tile__paragraph">Duis scelerisque efficitur neque non varius. Integer vulputate purus id porttitor dictum. Sed ac turpis semper,pulvinar leo ut, mollis orci. Nulla in ullamcorper risus.</p>
-            <button class="tile__button">Read more<small>&gt;&gt;</small></button>
+            <button type="button" class="tile__button">Read more<small>&gt;&gt;</small></button>
         </div><!--tile-->
         <div class="tile">
             <img src="./images/image_placeholder.png" alt="Placeholder image" class="tile__image">
             <h2 class="tile__header">Your title here</h2>
             <p class="tile__paragraph">Duis scelerisque efficitur neque non varius. Integer vulputate purus id porttitor dictum. Sed ac turpis semper,pulvinar leo ut, mollis orci. Nulla in ullamcorper risus.</p>
-            <button class="tile__button">Read more<small>&gt;&gt;</small></button>
+            <button type="button" class="tile__button">Read more<small>&gt;&gt;</small></button>
         </div><!--tile-->
     </div><!--row-container-->
 </section>
@@ -154,12 +154,48 @@
 	</div><!--row-container-->
 </section><!--features-->
 
-<section id="footer">
+<section id="footer-section" class="footer-section">
 	<div class="row-container">
 		<div class="footer-tile">
-			<h2>Contact details</h3>
-		</div>
-	</div<!--row-container-->
+			<h2 class="footer-tile__header">Contact details</h2>
+			<ul class="footer-list">
+				<li class="footer-list__list-item">Company name</li>
+				<li class="footer-list__list-item">Street Name and Number</li>
+				<li class="footer-list__list-item">Town</li>
+				<li class="footer-list__list-item">Town</li>
+				<li class="footer-list__list-item">Postcode Zip</li>
+				<li class="footer-list__list-item">Tel: xxxxx xxxxxx</li>
+				<li class="footer-list__list-item">Fax: xxxx xxxxxx</li>
+				<li class="footer-list__list-item">Email: <a href="mailto:contact@mydomain.com">contact@mydomain.com</a></li>
+			</ul><!--footer list-->
+		</div><!--footer tile - CONTACT DETAILS-->
+
+		<div class="footer-tile">
+			<h2 class="footer-tile__header">Quick links</h2>
+			<ul class="footer-list">
+				<li class="footer-list__list-item footer-list__list-item--underlined"><a href="#">Link text here</a></li>
+				<li class="footer-list__list-item footer-list__list-item--underlined"><a href="#">Link text here</a></li>
+				<li class="footer-list__list-item footer-list__list-item--underlined"><a href="#">Link text here</a></li>
+				<li class="footer-list__list-item footer-list__list-item--underlined"><a href="#">Link text here</a></li>
+			</ul><!--footer list-->
+		</div><!--footer tile - QUICK LINKS-->
+
+		<div class="footer-tile">
+			<h2 class="footer-tile__header">From The Blog</h2>
+			<h3 class="footer-tile__sub-header">Blog Post Title</h3>
+			<p class="footer-tile__author">Posted by Admin on oo.oo.oooo</p>
+			<p class="footer-tile__text">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+		</div><!--footer tile - FROM THE BLOG-->
+
+		<div class="footer-tile">
+			<h2 class="footer-tile__header">Newsletter</h2>
+			<form action="#" class="newsletter-input">
+					<input type="text" placeholder="Name" class="newsletter-input__text-field" aria-label="Name">
+					<input type="email" placeholder="Email" class="newsletter-input__text-field" aria-label="Email">
+					<input type="submit" value="Submit" class="newsletter-input__submit" role="button" aria-label="Sumit Newsletter">
+			</form>
+		</div><!--footer tile - FROM THE BLOG-->
+	</div><!--row-container-->
 
 </section><!--section footer-->
 
