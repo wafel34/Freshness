@@ -1,12 +1,12 @@
 .footer-section
     background: $footer-bg
     margin-top: 30px
+    padding-bottom: 45px
 
 .footer-tile
     @extend .col-4
     color: white
     padding-top: 20px
-    flex-wrap: wrap
     +element('header')
         font-weight: normal
     +element('sub-header')
@@ -43,3 +43,10 @@
         text-transform: uppercase
         border-radius: 5px
         padding: 0 20px
+    
+footer
+    background: $darkgrey
+    
+.footer-element
+    padding: 5px 15px
+    color: $lightgrey

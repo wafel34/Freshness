@@ -1,9 +1,18 @@
-.row-container
+.container
     max-width: 1000px
     padding: 0 5px
     margin: 0 auto
     display: flex
     justify-content: center
+
+.row-container
+    @extend .container
+    +modifier('spread')
+        justify-content: space-between
+    
+.row-container-lg
+    @extend .container
+    flex-wrap: wrap
 
 
 //3 columns in a row
@@ -20,7 +29,7 @@
 
 // 4 columns in a row
 .col-4
-    max-width: 247.5px
+    width: 247.5px
     padding: 0 10px
     &:first-child
         padding-left: 15px
