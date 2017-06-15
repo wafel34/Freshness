@@ -7,13 +7,16 @@
     @extend .col-4
     color: white
     padding-top: 20px
+    font-size: 0.75em
     +element('header')
         font-weight: normal
     +element('sub-header')
         color: $ultralightgrey
         margin-bottom: 0
+        font-sie: 0.8em
     +element('author')
         margin-top: 3px
+        font-size: 0.95em
         color: $ultralightgrey
     +element('text')
         color: $ultralightgrey
@@ -34,7 +37,10 @@
     +element('text-field')
         @extend .input
         background-color: $grey
+        color: $ultralightgrey
+        font-size: 1.1em
         width: 225px
+        height: 30px
         margin-bottom: 10px
         border-radius: 5px
     +element('submit')
@@ -43,10 +49,12 @@
         text-transform: uppercase
         border-radius: 5px
         padding: 0 20px
+        display: block
     
 footer
     background: $darkgrey
     
 .footer-element
     padding: 5px 15px
-    color: $lightgrey
+    color: $ultralightgrey
+    font-size: 0.75em
