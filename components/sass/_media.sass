@@ -5,17 +5,13 @@
         min-width: 660px
     .col-2
         min-width: 495px
-
-@media screen and (min-width: 796px) and (max-width: 1000px)
-    .tile__image
-        width: 80%
-        
-    .col-4
-        width: 50%
     
 @media screen and (max-width: 796px)
     .row-container
         flex-direction: column
+        
+    .row-container-lg
+        flex-wrap: wrap
 
     .col-1
         margin: 0 auto
@@ -29,11 +25,26 @@
     .col-4
         width: 50%
         
+    .slider-text
+        h1
+            margin-top: 0
+            
+    .features
+        flex-direction: row
+        
     .footer-element
         margin: 0 auto
+    
+@media screen and (max-width: 570px)
+    
+    .features
+        flex-direction: column
         
         
 @media screen and (max-width: 486px)
+    
+    .slider-screen
+        display: none
     
     .quick-links,
     .from-the-blog
@@ -42,6 +53,7 @@
     .col-4
         width: 250px
         margin: 0 auto
+        text-align: center
         
 
         
