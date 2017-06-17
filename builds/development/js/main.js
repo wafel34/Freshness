@@ -1,9 +1,14 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-//global.jQuery = require("jquery");
 var $ = require('jquery');
 
 $(function () {
-    
+    var $hamburger = $('.hamburger'),
+        $hamburgerLine = $('.hamburger__line'),
+        $navbar = $('.navbar');
+    $hamburger.on('click', function (){
+        $hamburgerLine.toggleClass('hamburger__line--clicked');
+        $navbar.toggleClass('navbar--show');
+    });
 });
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
@@ -10261,4 +10266,4 @@ return jQuery;
 } );
 
 },{}]},{},[1])
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vZ2xvYmFsLmpRdWVyeSA9IHJlcXVpcmUoXCJqcXVlcnlcIik7XHJcbnZhciAkID0gcmVxdWlyZSgnanF1ZXJ5Jyk7XHJcblxyXG4kKGZ1bmN0aW9uICgpIHtcclxuICAgIFxyXG59KTsiXX0=
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6Im1haW4uanMiLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgJCA9IHJlcXVpcmUoJ2pxdWVyeScpO1xyXG5cclxuJChmdW5jdGlvbiAoKSB7XHJcbiAgICB2YXIgJGhhbWJ1cmdlciA9ICQoJy5oYW1idXJnZXInKSxcclxuICAgICAgICAkaGFtYnVyZ2VyTGluZSA9ICQoJy5oYW1idXJnZXJfX2xpbmUnKSxcclxuICAgICAgICAkbmF2YmFyID0gJCgnLm5hdmJhcicpO1xyXG4gICAgJGhhbWJ1cmdlci5vbignY2xpY2snLCBmdW5jdGlvbiAoKXtcclxuICAgICAgICAkaGFtYnVyZ2VyTGluZS50b2dnbGVDbGFzcygnaGFtYnVyZ2VyX19saW5lLS1jbGlja2VkJyk7XHJcbiAgICAgICAgJG5hdmJhci50b2dnbGVDbGFzcygnbmF2YmFyLS1zaG93Jyk7XHJcbiAgICB9KTtcclxufSk7Il19

@@ -55,14 +55,17 @@
         
     .hamburger
         display: block
-    
     .navbar
         flex-direction: column
         align-items: center
         padding-top: 10px
+        display: none
         +element('menu-item')
             padding: 12px 0
             font-size: 1em
+        +modifier('show')
+            display: block
+            text-align: center
     
     .socials,
     .search-input,
