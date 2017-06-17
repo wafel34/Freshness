@@ -43,6 +43,29 @@
         
 @media screen and (max-width: 486px)
     
+    .logo
+        text-align: center
+        width: 90%
+        +element('main-text')
+            font-size: 1em
+            big
+                font-size: 1.2em
+        +element('secondary-text')
+            font-size: 0.6em
+        
+    .hamburger
+        display: block
+    
+    .navbar
+        flex-direction: column
+        align-items: center
+        padding-top: 10px
+        +element('menu-item')
+            padding: 12px 0
+            font-size: 1em
+    
+    .socials,
+    .search-input,
     .slider-screen
         display: none
     

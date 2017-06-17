@@ -32,6 +32,8 @@
 
 .logo
     @extend .col-1
+    display: flex
+    justify-content: space-between
     +element('main-text')
         display: block
         font-size: 1.6em
@@ -46,7 +48,36 @@
         display: block
         font-size: 0.8em
         letter-spacing: 0.4px
-
+    
+.hamburger
+    border: none
+    background: transparent
+    display: none
+    +element('line')
+        display: block
+        width: 20px
+        height: 2px
+        &::before,
+        &::after
+            display: block
+            content: "";
+            height: 2px
+            width: 20px
+            background: $grey
+            position: relative
+    
+        &::before
+            top: -2px
+        &::after
+            top: 2px
+            
+        +modifier('clicked')
+            &::before
+                transform: rotate(45deg)
+                top: 1px
+            &::after
+                transform: rotate(-45deg)
+                top: -1px
 nav
     display: flex
     align-items: flex-end
