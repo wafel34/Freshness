@@ -3,15 +3,17 @@
     padding-top: 25px
     padding-bottom: 25px
     position: relative
-    
-    +element('screen')
 
-    
+    +element('screen')
+        z-index: 1
+
     +element('image')
         position: absolute
+        z-index: -1
         top: 41px
         left: 31px
-
+        width: 366px
+        height: auto
 
 .slider-text
     @extend .col-2
@@ -25,7 +27,7 @@
         font-weight: 100
         letter-spacing: 1px
         display: flex
-    
+
         small
             align-self: center
             padding-left: 5px
@@ -35,7 +37,7 @@
         font-size: 2.6em
         margin-top: 70px
         color: $lightgrey
-        
+
     p
         font-size: 1em
         margin: 40px 0

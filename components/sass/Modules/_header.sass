@@ -34,8 +34,13 @@
     @extend .col-1
     display: flex
     justify-content: space-between
+    +element('image')
+        background: url('../images/logo.png') no-repeat center left
+        background-size: contain
+        height: 45px
+        width: 165px
     +element('main-text')
-        display: block
+        display: none
         font-size: 1.6em
         text-transform: uppercase
         color: $lightgrey
@@ -48,7 +53,8 @@
         display: block
         font-size: 0.8em
         letter-spacing: 0.4px
-    
+        display: none
+
 .hamburger
     border: none
     background: transparent
@@ -66,12 +72,12 @@
             background: $grey
             position: relative
             transition: transform 0.3s linear
-    
+
         &::before
             top: -2px
         &::after
             top: 2px
-            
+
         +modifier('clicked')
             &::before
                 transform: rotate(45deg)
