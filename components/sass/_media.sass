@@ -46,6 +46,8 @@
     .logo
         text-align: center
         width: 90%
+        padding-top: 15px
+        margin: 0 auto
         +element('main-text')
             font-size: 1em
             big
@@ -73,6 +75,15 @@
             opacity: 1
             visibility: visible
             transition: all .3s ease-in-out
+
+    .sticky
+        position: fixed
+        padding-bottom: 10px
+        z-index: 3
+        background: white
+        width: 100%
+        top: -5px
+        border-bottom: 1px solid $lightgrey
 
 
     .socials,
