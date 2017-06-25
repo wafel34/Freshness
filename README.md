@@ -9,5 +9,5 @@ Creating basic grid using flexbox
 
 I didn't focus on creating all the sub-pages, links etc as this was not a goal of this excersise.
 
-Checkout the result under this address: https://wafel34.github.io/Freshness/docs/
+Checkout the result under this address: https://wafel34.github.io/Freshness
 
