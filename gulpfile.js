@@ -29,7 +29,7 @@ var sassSources,
     outputDir,
     env;
 
-env = process.env.NODE_ENV || 'development';
+env = process.env.NODE_ENV || 'production';
 
 
 if (env === 'development') {
